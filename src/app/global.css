@@ -1,3 +1,81 @@
-@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import "tailwindcss";
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+@import "@mijn-ui/react-core/theme.css";
+@source "../../node_modules/@mijn-ui";
+
+@theme {
+  --color-docs-background: hsl(240, 11%, 91%);
+
+  --color-fd-background: var(--color-bg-default);
+  --color-fd-foreground: var(--color-fg-default);
+  --color-fd-muted: var(--color-bg-tertiary);
+  --color-fd-muted-foreground: var(--color-fg-tertiary);
+  --color-fd-popover: var(--color-bg-default-alt);
+  --color-fd-popover-foreground: var(--color-fg-default);
+  --color-fd-card: var(--color-bg-default);
+  --color-fd-card-foreground: var(--color-fg-default);
+  --color-fd-border: var(--color-outline-default);
+  --color-fd-primary: var(--color-bg-brand);
+  --color-fd-primary-foreground: var(--color-on-bg-brand);
+  --color-fd-secondary: var(--color-bg-secondary);
+  --color-fd-secondary-foreground: var(--color-fg-secondary);
+  --color-fd-ring: var(--color-outline-default);
+}
+
+.dark {
+  --color-docs-background: hsl(240, 7%, 8%);
+
+  --color-fd-background: var(--color-bg-default);
+  --color-fd-foreground: var(--color-fg-default);
+  --color-fd-muted: var(--color-bg-tertiary);
+  --color-fd-muted-foreground: var(--color-fg-tertiary);
+  --color-fd-popover: var(--color-bg-default-alt);
+  --color-fd-popover-foreground: var(--color-fg-default);
+  --color-fd-card: var(--color-bg-default);
+  --color-fd-card-foreground: var(--color-fg-default);
+  --color-fd-border: var(--color-outline-default);
+  --color-fd-primary: var(--color-bg-brand);
+  --color-fd-primary-foreground: var(--color-on-bg-brand);
+  --color-fd-secondary: var(--color-bg-secondary);
+  --color-fd-secondary-foreground: var(--color-fg-secondary);
+  --color-fd-ring: var(--color-outline-default);
+}
+
+#nd-subnav {
+  @apply bg-docs-background;
+
+  & > div {
+    @apply border-0;
+  }
+
+  [data-search-full] {
+    @apply border-0 bg-bg-secondary rounded-xs text-fg-tertiary cursor-pointer;
+
+    kbd {
+      @apply bg-bg-secondary border-0 ring ring-inset ring-outline-default;
+    }
+  }
+}
+
+body {
+  @apply bg-docs-background;
+}
+
+#nd-sidebar {
+  @apply border-none bg-transparent;
+
+  a {
+    @apply text-fg-secondary data-[active=true]:text-fg-brand data-[active=true]:bg-transparent hover:bg-transparent hover:text-fg-brand;
+  }
+
+  button {
+    &[data-state="open"] {
+      @apply text-fd-foreground [&>svg]:rotate-180;
+    }
+
+    & > svg {
+      @apply rotate-0;
+    }
+  }
+}
