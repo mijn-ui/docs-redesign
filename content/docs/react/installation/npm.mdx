@@ -1,0 +1,196 @@
+---
+title: Npm Installation
+description: This guide provides installation instructions for using Mijn-UI components via npm packages.
+root: true
+---
+
+<Callout title="Note:" type="warning">
+  Only one installation method is available right now. More options will be
+  added in the future. If you would like to contribute, I would truly appreciate
+  it.
+</Callout>
+
+## Requirements
+
+- [NextJS 16](https://nextjs.org) or later
+- [React 19](https://react.dev) or later
+- [Tailwind Css 4](https://tailwindcss.com/) or later
+
+---
+
+## Next.js Setup
+
+Please refer to the official [Next.js documentation](https://nextjs.org/docs/app/getting-started/installation) when creating a new project.
+When setting it up, make sure to enable **TypeScript** and **Tailwind CSS**, as MijnUI depends on both.
+
+---
+
+## Global Installation
+
+Getting started with MijnUI is simple using the global installation method, where all components are imported from a single package. Follow the steps below to set up MijnUI in your project:
+
+<Steps>
+  <Step>
+    ### Install Packages
+
+    Install MijnUI and its required dependencies by running one of the following commands:
+
+    ```package-install
+    @mijn-ui/react tw-animate-css tailwind-variants tailwind-merge
+    ```
+
+  </Step>
+  
+  <Step>
+    ### Configure Hoisted Dependencies (For PNPM Users)
+
+    If you're using **PNPM**, ensure MijnUI's packages are properly hoisted to the root `node_modules`. Add the following to your `.npmrc` file:
+
+    ```bash title=".npmrc"
+    public-hoist-pattern[]=*@mijn-ui/*
+    ```
+
+    After updating the `.npmrc` file, rerun the installation command to correctly hoist the dependencies:
+
+    ```bash
+    pnpm install
+    ```
+
+
+    <Callout title="Note:" >
+       If you're using a package manager like npm or Yarn, this step can be skipped.
+    </Callout>
+
+  </Step>
+
+  <Step>
+    ### Tailwind Css Setup
+
+    Configure Tailwind CSS by updating your `globals.css` file:
+
+    ```css title="globals.css"
+    @import "tailwindcss";
+    @import "tw-animate-css";
+    @import "@mijn-ui/react-core/theme.css";
+    /* ensure this path is correct */
+    @source "../../node_modules/@mijn-ui"; // [!code highlight]
+    ```
+
+    <Callout title="Note:" type="warning">
+      If you are using pnpm and monorepo architecture, please make sure you are
+      pointing to the ROOT `node_modules`
+    </Callout>
+
+  </Step>
+
+  <Step>
+    ### Use MijnUI Components
+
+    Now, you can start using MijnUI components in your project. Import individual components like this:
+
+    ```tsx
+    import { Button } from "@mijn-ui/react" // [!code highlight]
+
+    export default function Home() {
+      return (
+        <div>
+           {/* [!code highlight] */}
+          <Button>Click me</Button>
+        </div>
+      )
+    }
+    ```
+
+  </Step>
+</Steps>
+
+---
+
+## Individual Installation
+
+For greater flexibility, you can install MijnUI components individually. This allows you to include only the components you need in your project. Follow these steps to get started:
+
+<Steps>
+  <Step>
+    ### Install Core Packages
+    
+    Begin by installing the core packages required for all MijnUI components to work correctly:
+
+    ```package-install
+    @mijn-ui/react-core tw-animate-css tailwind-variants tailwind-merge
+    ```
+
+  </Step>
+
+  <Step>
+    ### Install Specific Components
+
+    Next, install the component you want to use. For example, to use the **Button** component, run:
+
+    ```package-install
+    @mijn-ui/react-button
+    ```
+
+  </Step>
+
+  <Step>
+    ### Configure Hoisted Dependencies (For PNPM Users)
+
+    Similar to the global installation, if you're using PNPM, update your `.npmrc` file to hoist MijnUI packages:
+
+    ```bash title=".npmrc"
+    public-hoist-pattern[]=*@mijn-ui/*
+    ```
+
+    Then, rerun the installation command:
+
+    ```bash
+    pnpm install
+    ```
+
+    <Callout title="Note:" >
+       If you're using a package manager like npm or Yarn, this step can be skipped.
+    </Callout>
+
+  </Step>
+
+  <Step>
+    ### Tailwind CSS Configuration
+
+    Configure Tailwind CSS by updating your `globals.css` file:
+
+    ```css title="globals.css"
+    @import "tailwindcss";
+    @import "tw-animate-css";
+    @import "@mijn-ui/react-core/theme.css";
+    /* ensure this path is correct */
+    @source "../../node_modules/@mijn-ui"; // [!code highlight]
+    ```
+
+    <Callout title="Note:" type="warning">
+      If you are using pnpm and monorepo architecture, please make sure you are
+      pointing to the ROOT `node_modules`
+    </Callout>
+
+  </Step>
+
+  <Step>
+    ### Use the Component
+
+    Import and use individual components in your application like this:
+
+    ```tsx
+    import { Button } from "@mijn-ui/react-button" // [!code highlight]
+
+    export default function Home() {
+      return (
+        <div>
+          {/* [!code highlight] */}
+          <Button>Click me</Button>
+        </div>
+      )
+    }
+    ```
+
+  </Step>
+</Steps>

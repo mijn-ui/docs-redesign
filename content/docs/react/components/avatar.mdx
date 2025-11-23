@@ -1,0 +1,73 @@
+---
+title: Avatar
+description: A graphical representation of a user or profile.
+docs: https://www.radix-ui.com/primitives/docs/components/avatar
+apiReference: https://www.radix-ui.com/primitives/docs/components/avatar#api-reference
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/avatar.ts
+---
+
+<ComponentPreview type="react" name="avatar-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+  ```package-install
+  @mijn-ui/react-avatar
+  ```
+  </MDXTabsContent>
+  
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+        **Install Required Dependencies:** 
+        ```package-install
+        @radix-ui/react-avatar
+        ```
+      </Step>
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/avatar/src/avatar.tsx" />
+      </Step>
+
+      <Step>
+      **Ensure that everything is functioning correctly after installation.**
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Avatar, AvatarFallback, AvatarImage } from "@mijn-ui/react-avatar"
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src="https://github.com/shadcn.png" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+```
+
+---
+
+### Avatar Sizes
+
+<ComponentPreview type="react" name="avatar-sizes" />
+
+### Avatar Group
+
+<ComponentPreview type="react" name="avatar-group" />
+
+---
+
+## Avatar Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                                            |
+| ------------- | ---------------------- | ------------------------------------------------------ |
+| `base`        | `Avatar`               | Styles the root `Avatar` component.                    |
+| `image`       | `AvatarImage`          | Styles the avatar image.                               |
+| `fallback`    | `AvatarFallback`       | Styles the fallback content when the image is missing. |

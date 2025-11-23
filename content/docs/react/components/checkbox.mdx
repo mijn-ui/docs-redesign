@@ -1,0 +1,56 @@
+---
+title: Checkbox
+description: A control for selecting one or multiple options.
+docs: https://www.radix-ui.com/primitives/docs/components/checkbox
+apiReference: https://www.radix-ui.com/primitives/docs/components/checkbox#api-reference
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/checkbox.ts
+---
+
+<ComponentPreview type="react" name="checkbox-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+    ```package-install
+    @mijn-ui/react-checkbox
+    ```
+  </MDXTabsContent>
+
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+        **Install Required Dependencies:**
+      
+        ```package-install
+        @radix-ui/react-checkbox
+        ```
+      </Step>
+
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/checkbox/src/checkbox.tsx" />
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Checkbox } from "@mijn-ui/react-checkbox"
+```
+
+```tsx
+<Checkbox />
+```
+
+## Checkbox Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                          |
+| ------------- | ---------------------- | ------------------------------------ |
+| `base`        | `Checkbox`             | Styles the root checkbox component.  |
+| `indicator`   | `Checkbox`             | Styles the checkbox indicator.       |
+| `icon`        | `Checkbox`             | Styles the icon inside the checkbox. |

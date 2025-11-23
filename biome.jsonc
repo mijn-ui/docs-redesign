@@ -21,6 +21,9 @@
       },
       "nursery": {
         "noUselessUndefined": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
       }
     }
   }

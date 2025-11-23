@@ -1,0 +1,67 @@
+---
+title: RadioGroup
+description: A group of radio buttons for single-option selection.
+docs: https://www.radix-ui.com/primitives/docs/components/radio-group
+apiReference: https://www.radix-ui.com/primitives/docs/components/radio-group#api-reference
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/radio-group.ts
+---
+
+<ComponentPreview type="react" name="radio-group-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+  ```package-install
+  @mijn-ui/react-radio-group
+  ```
+  </MDXTabsContent>
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+      **Install Required Dependencies:**
+
+      ```package-install
+      @radix-ui/react-radio-group
+      ```
+      </Step>
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/radio-group/src/radio-group.tsx" />
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Label } from "@mijn-ui/react-label"
+import { RadioGroup, RadioGroupItem } from "@mijn-ui/react-radio-group"
+```
+
+```tsx
+<RadioGroup defaultValue="option-one">
+  <div className="flex items-center space-x-2">
+    <RadioGroupItem value="option-one" id="option-one" />
+    <Label htmlFor="option-one">Option One</Label>
+  </div>
+  <div className="flex items-center space-x-2">
+    <RadioGroupItem value="option-two" id="option-two" />
+    <Label htmlFor="option-two">Option Two</Label>
+  </div>
+</RadioGroup>
+```
+
+---
+
+## RadioGroup Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                                    |
+| ------------- | ---------------------- | ---------------------------------------------- |
+| `base`        | `RadioGroup`           | Styles the root radio group component.         |
+| `item`        | `RadioGroupItem`       | Styles individual radio items.                 |
+| `indicator`   | `RadioGroupItem`       | Styles the indicator for selected radio items. |
+| `icon`        | `RadioGroupItem`       | Styles the icon within the radio item.         |

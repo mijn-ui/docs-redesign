@@ -1,0 +1,69 @@
+---
+title: Button
+description: A flexible and customizable button component for various actions.
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/button.ts
+---
+
+<ComponentPreview type="react" name="button-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+  ```package-install
+  @mijn-ui/react-button
+  ```
+  </MDXTabsContent>
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+        **Install Required Dependencies:** 
+        ```package-install
+        @radix-ui/react-slot
+        ```
+      </Step>
+
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/button/src/button.tsx" />
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Button } from "@mijn-ui/react-button"
+```
+
+```tsx
+<Button variant="outlined">Button</Button>
+```
+
+---
+
+## Example
+
+### Variants
+
+<ComponentPreview type="react" name="button-variants" className="flex-col md:flex-row" />
+
+### Sizes
+
+<ComponentPreview type="react" name="button-sizes" />
+
+### IconOnly
+
+<ComponentPreview type="react" name="button-icon-only" />
+
+---
+
+## Button Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                        |
+| ------------- | ---------------------- | ---------------------------------- |
+| `base`        | `Button`               | Styles the button component.       |
+| `icon`        | `Button`               | Styles the icon inside the button. |

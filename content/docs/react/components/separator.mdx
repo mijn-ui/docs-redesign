@@ -1,0 +1,55 @@
+---
+title: Separator
+description: A divider for grouping content or sections.
+docs: https://www.radix-ui.com/primitives/docs/components/separator
+apiReference: https://www.radix-ui.com/primitives/docs/components/separator#api-reference
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/separator.ts
+---
+
+<ComponentPreview type="react" name="separator-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+  ```package-install
+  @mijn-ui/react-separator
+  ```
+  </MDXTabsContent>
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+        **Install Required Dependencies:**
+      
+        ```package-install
+        @radix-ui/react-separator
+        ```
+      </Step>
+
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/separator/src/separator.tsx" />
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Separator } from "@mijn-ui/react-separator"
+```
+
+```tsx
+<Separator />
+```
+
+---
+
+## Separator Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                     |
+| ------------- | ---------------------- | ------------------------------- |
+| `base`        | `Separator`            | Styles the separator component. |

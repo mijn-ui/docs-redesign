@@ -1,0 +1,62 @@
+---
+title: Badge
+description: Displays a badge or a component that looks like a badge.
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/badge.ts
+---
+
+<ComponentPreview type="react" name="badge-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+    ```package-install
+    @mijn-ui/react-badge
+    ```
+  </MDXTabsContent>
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+        **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/badge/src/badge.tsx" />
+      </Step>
+
+      <Step>
+        **Ensure that everything is functioning correctly after installation.**
+      </Step>
+    </Steps>
+
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Badge } from "@mijn-ui/react-badge"
+```
+
+```tsx
+<Badge variant="outlined">Badge</Badge>
+```
+
+---
+
+## Examples
+
+### Variants
+
+<ComponentPreview type="react" name="badge-variants" className="flex-col md:flex-row" />
+
+### Radius
+
+<ComponentPreview type="react" name="badge-radius" />
+
+
+---
+
+## Badge Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                 |
+| ------------- | ---------------------- | --------------------------- |
+| `base`        | `Badge`                | Styles the badge component. |

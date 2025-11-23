@@ -1,0 +1,50 @@
+---
+title: Progress
+description: A visual indicator of task completion or status.
+docs: https://www.radix-ui.com/primitives/docs/components/progress
+apiReference: https://www.radix-ui.com/primitives/docs/components/progress#api-reference
+styleSource: https://github.com/mijn-ui/mijn-ui-react/blob/main/packages/theme/src/components/progress.ts
+---
+
+<ComponentPreview type="react" name="progress-example" />
+
+## Installation
+
+<MDXTabs items={["Npm", "Manual"]}>
+  <MDXTabsContent value="Npm">
+  ```package-install
+  @mijn-ui/react-progress
+  ```
+  </MDXTabsContent>
+  <MDXTabsContent value="Manual">
+    <Steps>
+      <Step>
+      **Copy and paste the following code into your project**
+
+        <ReactSourceCodeDisplay path="packages/components/progress/src/progress.tsx" />
+      </Step>
+      <Step>
+      **Ensure that everything is functioning correctly after installation.**
+      </Step>
+    </Steps>
+  </MDXTabsContent>
+</MDXTabs>
+
+## Usage
+
+```tsx
+import { Progress } from "@mijn-ui/react-progress"
+```
+
+```tsx
+<Progress value={33} />
+```
+
+---
+
+## Progress Style Slots
+
+| **Slot Name** | **Targeted Component** | **Purpose**                         |
+| ------------- | ---------------------- | ----------------------------------- |
+| `base`        | `Progress`             | Styles the root progress component. |
+| `indicator`   | `Progress`             | Styles the progress indicator.      |

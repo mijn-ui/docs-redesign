@@ -2,68 +2,84 @@
 @import "fumadocs-ui/css/neutral.css";
 @import "fumadocs-ui/css/preset.css";
 @import "@mijn-ui/react-core/theme.css";
+@import "tw-animate-css";
 @source "../../node_modules/@mijn-ui";
 
 @theme {
-  --color-docs-background: hsl(240, 11%, 91%);
+  --color-fd-background: hsl(240, 11%, 94%);
+  --color-fd-foreground: hsl(0, 0%, 6%);
 
-  --color-fd-background: var(--color-bg-default);
-  --color-fd-foreground: var(--color-fg-default);
-  --color-fd-muted: var(--color-bg-tertiary);
-  --color-fd-muted-foreground: var(--color-fg-tertiary);
-  --color-fd-popover: var(--color-bg-default-alt);
-  --color-fd-popover-foreground: var(--color-fg-default);
-  --color-fd-card: var(--color-bg-default);
-  --color-fd-card-foreground: var(--color-fg-default);
+  --color-fd-card: hsl(0, 0%, 100%);
+  --color-fd-card-foreground: hsl(0, 0%, 4%);
+  --color-fd-popover: hsl(0, 0%, 100%);
+  --color-fd-popover-foreground: hsl(0, 0%, 4%);
+  --color-fd-secondary: hsl(0, 0%, 90.5%);
+  --color-fd-secondary-foreground: hsl(0, 0%, 9%);
+  --color-fd-muted: lab(96.52% -0.0000298023 0.0000119209);
+  --color-fd-muted-foreground: hsl(0, 0%, 45%);
+  --color-fd-accent: hsl(0, 0%, 96%);
+  --color-fd-accent-foreground: hsl(0, 0%, 9%);
+
   --color-fd-border: var(--color-outline-default);
   --color-fd-primary: var(--color-bg-brand);
   --color-fd-primary-foreground: var(--color-on-bg-brand);
-  --color-fd-secondary: var(--color-bg-secondary);
-  --color-fd-secondary-foreground: var(--color-fg-secondary);
   --color-fd-ring: var(--color-outline-default);
+
+  --color-creator-brand: oklch(0.4324 0.1406 291.18);
 }
 
 .dark {
-  --color-docs-background: hsl(240, 7%, 8%);
+  --color-fd-background: hsl(30, 5%, 9%);
+  --color-fd-foreground: hsl(0, 0%, 83%);
+  --color-fd-muted: hsl(0, 0%, 15%);
+  --color-fd-muted-foreground: hsl(0, 0%, 63%);
+  --color-fd-secondary: hsl(0, 0%, 11%);
+  --color-fd-secondary-foreground: hsl(0, 0%, 98%);
+  --color-fd-card: hsl(0, 0%, 9%);
+  --color-fd-card-foreground: hsl(0, 0%, 98%);
+  --color-fd-popover: hsl(0, 0%, 9%);
+  --color-fd-popover-foreground: hsl(0, 0%, 98%);
 
-  --color-fd-background: var(--color-bg-default);
-  --color-fd-foreground: var(--color-fg-default);
-  --color-fd-muted: var(--color-bg-tertiary);
-  --color-fd-muted-foreground: var(--color-fg-tertiary);
-  --color-fd-popover: var(--color-bg-default-alt);
-  --color-fd-popover-foreground: var(--color-fg-default);
-  --color-fd-card: var(--color-bg-default);
-  --color-fd-card-foreground: var(--color-fg-default);
   --color-fd-border: var(--color-outline-default);
   --color-fd-primary: var(--color-bg-brand);
   --color-fd-primary-foreground: var(--color-on-bg-brand);
-  --color-fd-secondary: var(--color-bg-secondary);
-  --color-fd-secondary-foreground: var(--color-fg-secondary);
   --color-fd-ring: var(--color-outline-default);
+
+  --color-creator-brand: oklch(0.7128 0.0652 289.73);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fd-sidebar-width: 286px;
+  }
 }
 
 #nd-subnav {
-  @apply bg-docs-background;
+  @apply bg-fd-background;
 
   & > div {
     @apply border-0;
   }
 
   [data-search-full] {
-    @apply border-0 bg-bg-secondary rounded-xs text-fg-tertiary cursor-pointer;
+    @apply border-0 bg-fd-secondary rounded-xs text-fd-muted-foreground cursor-pointer;
 
     kbd {
-      @apply bg-bg-secondary border-0 ring ring-inset ring-outline-default;
+      @apply bg-fd-secondary border-0 ring ring-inset ring-outline-default;
     }
   }
 }
 
 body {
-  @apply bg-docs-background;
+  @apply bg-fd-background;
 }
 
 #nd-sidebar {
-  @apply border-none bg-transparent;
+  @apply border-none justify-center bg-transparent bottom-24;
+
+  p {
+    @apply font-semibold text-fg-tertiary;
+  }
 
   a {
     @apply text-fg-secondary data-[active=true]:text-fg-brand data-[active=true]:bg-transparent hover:bg-transparent hover:text-fg-brand;
@@ -77,5 +93,11 @@ body {
     & > svg {
       @apply rotate-0;
     }
+  }
+}
+
+#nd-page {
+  figure.shiki {
+    @apply shadow-none!;
   }
 }
