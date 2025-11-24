@@ -20,10 +20,10 @@ import {
 } from "lucide-react";
 
 const CommandExample = () => (
-  <Command className="rounded-lg border border-border shadow-medium md:w-[450px]">
+  <Command className="rounded-lg border border-outline-default shadow-medium md:w-[450px]">
     <CommandInput asChild>
       <Input
-        className="bg-background-alt"
+        className="bg-bg-default-alt"
         placeholder="Type a command or search..."
         startIcon={<Search />}
         variant="underline"

@@ -9,9 +9,9 @@ import {
 import { Ellipsis } from "lucide-react";
 
 const TableExample = () => (
-  <div className="overflow-auto rounded-xl border border-border">
+  <div className="overflow-auto rounded-xl border border-outline-default">
     <Table>
-      <TableHeader className="bg-secondary">
+      <TableHeader className="bg-bg-secondary">
         <TableRow>
           <TableHeaderCell>Customer</TableHeaderCell>
           <TableHeaderCell>Date/Time</TableHeaderCell>
@@ -24,12 +24,12 @@ const TableExample = () => (
         </TableRow>
       </TableHeader>
 
-      <TableBody className="bg-background-alt">
+      <TableBody className="bg-bg-default-alt">
         <TableRow>
           <TableCell>Alex Cooper</TableCell>
           <TableCell className="min-w-32">
             <p>Feb 17, 2024</p>
-            <p className="text-muted-foreground text-tiny">08:48 AM</p>
+            <p className="text-fg-tertiary text-tiny">08:48 AM</p>
           </TableCell>
 
           <TableCell className="hidden text-balance sm:table-cell">
@@ -39,7 +39,7 @@ const TableExample = () => (
           <TableCell>$1042.25</TableCell>
 
           <TableCell>
-            <p className="flex items-center gap-2 text-muted-foreground text-tiny">
+            <p className="flex items-center gap-2 text-fg-tertiary text-tiny">
               <span
                 className={
                   "block size-2 rounded-full bg-green-500 ring-2 ring-green-200"
@@ -59,7 +59,7 @@ const TableExample = () => (
 
           <TableCell className="min-w-32">
             <p>Feb 17, 2024</p>
-            <p className="text-muted-foreground text-tiny"> 08:48 AM</p>
+            <p className="text-fg-tertiary text-tiny"> 08:48 AM</p>
           </TableCell>
 
           <TableCell className="hidden text-balance sm:table-cell">
@@ -69,7 +69,7 @@ const TableExample = () => (
           <TableCell>$1042.25</TableCell>
 
           <TableCell>
-            <p className="flex items-center gap-2 text-muted-foreground text-tiny">
+            <p className="flex items-center gap-2 text-fg-tertiary text-tiny">
               <span
                 className={
                   "block size-2 rounded-full bg-yellow-500 ring-2 ring-yellow-200"
@@ -89,7 +89,7 @@ const TableExample = () => (
 
           <TableCell className="min-w-32">
             <p>Feb 17, 2024</p>
-            <p className="text-muted-foreground text-tiny"> 08:48 AM</p>
+            <p className="text-fg-tertiary text-tiny"> 08:48 AM</p>
           </TableCell>
 
           <TableCell className="hidden text-balance sm:table-cell">
@@ -101,7 +101,7 @@ const TableExample = () => (
           <TableCell>$1042.25</TableCell>
 
           <TableCell>
-            <p className="flex items-center gap-2 text-muted-foreground text-tiny">
+            <p className="flex items-center gap-2 text-fg-tertiary text-tiny">
               <span
                 className={
                   "block size-2 rounded-full bg-green-500 ring-2 ring-green-200"
@@ -121,7 +121,7 @@ const TableExample = () => (
 
           <TableCell className="min-w-32">
             <p>Feb 17, 2024</p>
-            <p className="text-muted-foreground text-tiny"> 08:48 AM</p>
+            <p className="text-fg-tertiary text-tiny"> 08:48 AM</p>
           </TableCell>
 
           <TableCell className="hidden text-balance sm:table-cell">
@@ -133,7 +133,7 @@ const TableExample = () => (
           <TableCell>$1042.25</TableCell>
 
           <TableCell>
-            <p className="flex items-center gap-2 text-muted-foreground text-tiny">
+            <p className="flex items-center gap-2 text-fg-tertiary text-tiny">
               <span
                 className={
                   "block size-2 rounded-full bg-red-500 ring-2 ring-red-200"

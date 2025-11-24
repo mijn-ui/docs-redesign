@@ -34,10 +34,10 @@ const PopoverExample = ({ unstyled = false }: PopoverExampleProps) => (
             Width
           </Label>
           <Input
-            className="h-8 bg-background-alt p-1.5"
+            className="h-8 bg-bg-default-alt p-1.5"
             classNames={{
               wrapper: "max-w-40",
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="100%"
             id="width"
@@ -51,10 +51,10 @@ const PopoverExample = ({ unstyled = false }: PopoverExampleProps) => (
             Max. width
           </Label>
           <Input
-            className="h-8 bg-background-alt p-1.5"
+            className="h-8 bg-bg-default-alt p-1.5"
             classNames={{
               wrapper: "max-w-40",
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="300px"
             id="maxWidth"
@@ -68,10 +68,10 @@ const PopoverExample = ({ unstyled = false }: PopoverExampleProps) => (
             Height
           </Label>
           <Input
-            className="h-8 bg-background-alt p-1.5"
+            className="h-8 bg-bg-default-alt p-1.5"
             classNames={{
               wrapper: "max-w-40",
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="25px"
             id="height"
@@ -85,10 +85,10 @@ const PopoverExample = ({ unstyled = false }: PopoverExampleProps) => (
             Max. height
           </Label>
           <Input
-            className="h-8 bg-background-alt p-1.5"
+            className="h-8 bg-bg-default-alt p-1.5"
             classNames={{
               wrapper: "max-w-40",
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="none"
             id="maxHeight"

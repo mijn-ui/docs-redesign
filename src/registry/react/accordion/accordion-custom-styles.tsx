@@ -14,7 +14,7 @@ const AccordionCustomStyles = () => {
         contentWrapper: "", // [!code highlight]
         content: "", // [!code highlight]
         triggerWrapper: "", // [!code highlight]
-        trigger: "rounded-lg text-primary", // [!code highlight]
+        trigger: "rounded-lg text-fg-brand", // [!code highlight]
         icon: "", // [!code highlight]
       }}
       collapsible

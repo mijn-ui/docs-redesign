@@ -2,13 +2,12 @@ import {
   buttonStyles,
   cn,
   createTVUnstyledSlots,
-  tv,
   type UnstyledComponentWithSlots,
-  type VariantProps,
 } from "@mijn-ui/react";
 import { Slot, Slottable } from "@radix-ui/react-slot";
 import { Loader2 } from "lucide-react";
 import type * as React from "react";
+import { tv, type VariantProps } from "tailwind-variants";
 
 // Create custom button styles by extending the default styles
 // using the tailwind-variants (tv) function from @mijn-ui/react-theme.

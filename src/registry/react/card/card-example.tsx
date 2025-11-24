@@ -13,7 +13,7 @@ const CardExample = () => (
     <CardHeader>
       <Button
         asChild
-        className="rounded-full bg-secondary p-0 text-muted-foreground sm:size-12"
+        className="rounded-full bg-bg-secondary p-0 text-fg-tertiary sm:size-12"
         iconOnly
         variant="ghost"
       >
@@ -22,7 +22,7 @@ const CardExample = () => (
         </span>
       </Button>
 
-      <div className="absolute top-4 right-4 text-muted-foreground">
+      <div className="absolute top-4 right-4 text-fg-tertiary">
         <ArrowUpRight className="size-5 sm:size-6" />
       </div>
     </CardHeader>

@@ -54,6 +54,10 @@
   }
 }
 
+.text-xxs {
+  font-size: 10px;
+}
+
 #nd-subnav {
   @apply bg-fd-background;
 
@@ -70,7 +74,7 @@
   }
 }
 
-body {
+body:has(#nd-docs-layout) {
   @apply bg-fd-background;
 }
 
@@ -100,4 +104,9 @@ body {
   figure.shiki {
     @apply shadow-none!;
   }
+}
+
+.lucide {
+  width: 1em;
+  height: 1em;
 }

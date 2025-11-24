@@ -27,7 +27,7 @@ const PaginationExample = () => {
     >
       <PaginationContent className="max-w-md justify-between">
         <PaginationPreviousButton>
-          <ChevronLeft className="size-4 text-secondary-foreground" />
+          <ChevronLeft className="size-4 text-fg-secondary" />
           <span className="px-1">Previous</span>
         </PaginationPreviousButton>
         <div className="flex items-center">
@@ -37,7 +37,7 @@ const PaginationExample = () => {
         </div>
         <PaginationNextButton>
           <span className="px-1">Next</span>
-          <ChevronRight className="size-4 text-secondary-foreground" />
+          <ChevronRight className="size-4 text-fg-secondary" />
         </PaginationNextButton>
       </PaginationContent>
     </Pagination>

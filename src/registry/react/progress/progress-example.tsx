@@ -30,12 +30,12 @@ const ProgressExample = () => {
 
   return (
     <div className="w-80 space-y-1">
-      <div className="flex items-center justify-between font-medium text-foreground text-sm">
+      <div className="flex items-center justify-between font-medium text-fg-default text-sm">
         <h5>Progress Label</h5>
         <p>{value}%</p>
       </div>
       <Progress value={value} />
-      <div className="flex items-center justify-between text-muted-foreground text-tiny">
+      <div className="flex items-center justify-between text-fg-tertiary text-tiny">
         <p>min</p>
         <p>max</p>
       </div>

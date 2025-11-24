@@ -20,7 +20,7 @@ const StatsCardExample = () => (
       <CardTitle className="font-medium text-xl sm:text-2xl">
         $75,890.75
       </CardTitle>
-      <p className="font-normal text-muted-foreground text-xs">
+      <p className="font-normal text-fg-tertiary text-xs">
         <span className="text-success">+128%</span> from June
       </p>
     </CardContent>

@@ -39,16 +39,16 @@ const CommandDialogExample = () => {
 
   return (
     <>
-      <p className="text-muted-foreground text-sm">
+      <p className="text-fg-tertiary text-sm">
         Press{" "}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-medium font-mono text-[10px] text-muted-foreground opacity-100">
+        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-bg-tertiary px-1.5 font-medium font-mono text-[10px] text-fg-tertiary opacity-100">
           <span className="text-tiny">⌘</span>J
         </kbd>
       </p>
       <CommandDialog onOpenChange={setOpen} open={open}>
         <CommandInput asChild placeholder="Type a command or search...">
           <Input
-            className="bg-background-alt"
+            className="bg-bg-default-alt"
             placeholder="Type a command or search..."
             startIcon={<Search />}
             variant="underline"

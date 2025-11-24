@@ -35,9 +35,9 @@ const ScrollAreaHorizontal = () => (
               width={300}
             />
           </div>
-          <figcaption className="pt-2 text-muted-foreground text-xs">
+          <figcaption className="pt-2 text-fg-tertiary text-xs">
             Photo by{" "}
-            <span className="font-semibold text-foreground">
+            <span className="font-semibold text-fg-default">
               {artwork.artist}
             </span>
           </figcaption>

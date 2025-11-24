@@ -39,18 +39,18 @@ const TabsExample = () => (
         </CardHeader>
         <CardContent className="space-y-4">
           <Input
-            className="bg-background-alt"
+            className="bg-bg-default-alt"
             classNames={{
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="Pedro Duarte"
             id="name"
             label="Name"
           />
           <Input
-            className="bg-background-alt"
+            className="bg-bg-default-alt"
             classNames={{
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             defaultValue="@peduarte"
             id="username"
@@ -72,9 +72,9 @@ const TabsExample = () => (
         </CardHeader>
         <CardContent className="space-y-4">
           <Input
-            className="bg-background-alt"
+            className="bg-bg-default-alt"
             classNames={{
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             id="current"
             label="Current password"
@@ -82,9 +82,9 @@ const TabsExample = () => (
           />
 
           <Input
-            className="bg-background-alt"
+            className="bg-bg-default-alt"
             classNames={{
-              label: "bg-background-alt peer-focus:bg-background-alt",
+              label: "bg-bg-default-alt peer-focus:bg-bg-default-alt",
             }}
             id="new"
             label="New password"
