@@ -1,12 +1,12 @@
-import { Button } from "@mijn-ui/react-button";
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@mijn-ui/react-card";
+} from "@mijn-ui/react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { GithubLinkButton } from "@/app/templates/components/github-link-button";

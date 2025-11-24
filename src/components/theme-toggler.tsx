@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, type ButtonProps } from "@mijn-ui/react-button";
+import { Button, type ButtonProps } from "@mijn-ui/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Icons } from "./icons";

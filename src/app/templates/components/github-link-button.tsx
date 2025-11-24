@@ -1,4 +1,4 @@
-import { Button } from "@mijn-ui/react-button";
+import { Button } from "@mijn-ui/react";
 import Link from "next/link";
 import { Icons } from "@/components/icons";
 

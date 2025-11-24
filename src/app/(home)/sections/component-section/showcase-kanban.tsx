@@ -3,7 +3,7 @@ import {
   AvatarFallback,
   AvatarGroup,
   AvatarImage,
-} from "@mijn-ui/react-avatar";
+} from "@mijn-ui/react";
 import { Clock, EllipsisVertical, Plus } from "lucide-react";
 
 const ShowcaseKanban = () => {

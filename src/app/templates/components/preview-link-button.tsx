@@ -1,4 +1,4 @@
-import { Button } from "@mijn-ui/react-button";
+import { Button } from "@mijn-ui/react";
 import { ExternalLink } from "lucide-react";
 
 const PreviewLinkButton = ({ href }: { href: string }) => (

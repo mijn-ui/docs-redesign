@@ -1,5 +1,4 @@
-import { cn } from "@mijn-ui/react";
-import { Avatar, AvatarFallback, AvatarImage } from "@mijn-ui/react-avatar";
+import { Avatar, AvatarFallback, AvatarImage, cn } from "@mijn-ui/react";
 import Link from "next/link";
 import { getGitHubContributors } from "./get-contributors";
 

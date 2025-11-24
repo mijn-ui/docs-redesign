@@ -1,8 +1,13 @@
 "use client";
 
-import { cn } from "@mijn-ui/react";
-import { Button } from "@mijn-ui/react-button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@mijn-ui/react-tabs";
+import {
+  Button,
+  cn,
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@mijn-ui/react";
 import { Suspense } from "react";
 import { Icons } from "@/components/icons";
 import { useScrollActive } from "@/hooks/use-scroll-active";
