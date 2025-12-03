@@ -6,14 +6,14 @@
 @source "../../node_modules/@mijn-ui";
 
 @theme {
-  --color-fd-background: hsl(240, 11%, 94%);
+  --color-fd-background: var(--color-bg-default);
   --color-fd-foreground: hsl(0, 0%, 6%);
 
   --color-fd-card: hsl(0, 0%, 100%);
   --color-fd-card-foreground: hsl(0, 0%, 4%);
   --color-fd-popover: hsl(0, 0%, 100%);
   --color-fd-popover-foreground: hsl(0, 0%, 4%);
-  --color-fd-secondary: hsl(0, 0%, 90.5%);
+  --color-fd-secondary: var(--color-bg-secondary);
   --color-fd-secondary-foreground: hsl(0, 0%, 9%);
   --color-fd-muted: lab(96.52% -0.0000298023 0.0000119209);
   --color-fd-muted-foreground: hsl(0, 0%, 45%);
@@ -29,11 +29,11 @@
 }
 
 .dark {
-  --color-fd-background: hsl(30, 5%, 9%);
+  --color-fd-background: var(--color-bg-default);
   --color-fd-foreground: hsl(0, 0%, 83%);
   --color-fd-muted: hsl(0, 0%, 15%);
   --color-fd-muted-foreground: hsl(0, 0%, 63%);
-  --color-fd-secondary: hsl(0, 0%, 11%);
+  --color-fd-secondary: var(--color-bg-secondary);
   --color-fd-secondary-foreground: hsl(0, 0%, 98%);
   --color-fd-card: hsl(0, 0%, 9%);
   --color-fd-card-foreground: hsl(0, 0%, 98%);

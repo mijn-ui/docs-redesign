@@ -1,8 +1,8 @@
 /**
  * React Component Registry - Auto-generated
  * 
- * Total components: 56
- * Generated: 2025-11-22T17:33:21.620Z
+ * Total components: 61
+ * Generated: 2025-12-03T16:04:21.727Z
  */
 
 import React from "react"
@@ -19,25 +19,15 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/theme/theme-toggler.tsx",
     component: React.lazy(() => import("@/registry/react/theme/theme-toggler")),
   },
-  "textarea-example": {
+  "table-example": {
     type: "example",
-    source: "./src/registry/react/textarea/textarea-example.tsx",
-    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
-  },
-  "tabs-example": {
-    type: "example",
-    source: "./src/registry/react/tabs/tabs-example.tsx",
-    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
+    source: "./src/registry/react/table/table-example.tsx",
+    component: React.lazy(() => import("@/registry/react/table/table-example")),
   },
   "switch-example": {
     type: "example",
     source: "./src/registry/react/switch/switch-example.tsx",
     component: React.lazy(() => import("@/registry/react/switch/switch-example")),
-  },
-  "table-example": {
-    type: "example",
-    source: "./src/registry/react/table/table-example.tsx",
-    component: React.lazy(() => import("@/registry/react/table/table-example")),
   },
   "skeleton-example": {
     type: "example",
@@ -48,6 +38,16 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/skeleton/skeleton-card.tsx",
     component: React.lazy(() => import("@/registry/react/skeleton/skeleton-card")),
+  },
+  "tabs-example": {
+    type: "example",
+    source: "./src/registry/react/tabs/tabs-example.tsx",
+    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
+  },
+  "textarea-example": {
+    type: "example",
+    source: "./src/registry/react/textarea/textarea-example.tsx",
+    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
   },
   "separator-example": {
     type: "example",
@@ -64,11 +64,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/select/select-example.tsx",
     component: React.lazy(() => import("@/registry/react/select/select-example")),
   },
-  "radio-group-example": {
-    type: "example",
-    source: "./src/registry/react/radio-group/radio-group-example.tsx",
-    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
-  },
   "scroll-area-horizontal": {
     type: "example",
     source: "./src/registry/react/scroll-area/scroll-area-horizontal.tsx",
@@ -79,15 +74,20 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/scroll-area/scroll-area-example.tsx",
     component: React.lazy(() => import("@/registry/react/scroll-area/scroll-area-example")),
   },
-  "popover-example": {
+  "radio-group-example": {
     type: "example",
-    source: "./src/registry/react/popover/popover-example.tsx",
-    component: React.lazy(() => import("@/registry/react/popover/popover-example")),
+    source: "./src/registry/react/radio-group/radio-group-example.tsx",
+    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
   },
   "progress-example": {
     type: "example",
     source: "./src/registry/react/progress/progress-example.tsx",
     component: React.lazy(() => import("@/registry/react/progress/progress-example")),
+  },
+  "popover-example": {
+    type: "example",
+    source: "./src/registry/react/popover/popover-example.tsx",
+    component: React.lazy(() => import("@/registry/react/popover/popover-example")),
   },
   "pagination-example": {
     type: "example",
@@ -154,11 +154,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/command/command-dialog.tsx",
     component: React.lazy(() => import("@/registry/react/command/command-dialog")),
   },
-  "checkbox-example": {
-    type: "example",
-    source: "./src/registry/react/checkbox/checkbox-example.tsx",
-    component: React.lazy(() => import("@/registry/react/checkbox/checkbox-example")),
-  },
   "card-stats": {
     type: "example",
     source: "./src/registry/react/card/card-stats.tsx",
@@ -169,15 +164,40 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/card/card-example.tsx",
     component: React.lazy(() => import("@/registry/react/card/card-example")),
   },
+  "checkbox-example": {
+    type: "example",
+    source: "./src/registry/react/checkbox/checkbox-example.tsx",
+    component: React.lazy(() => import("@/registry/react/checkbox/checkbox-example")),
+  },
+  "calendar-example": {
+    type: "example",
+    source: "./src/registry/react/calendar/calendar-example.tsx",
+    component: React.lazy(() => import("@/registry/react/calendar/calendar-example")),
+  },
+  "button-with-icon": {
+    type: "example",
+    source: "./src/registry/react/button/button-with-icon.tsx",
+    component: React.lazy(() => import("@/registry/react/button/button-with-icon")),
+  },
   "button-variants": {
     type: "example",
     source: "./src/registry/react/button/button-variants.tsx",
     component: React.lazy(() => import("@/registry/react/button/button-variants")),
   },
+  "button-unstyled": {
+    type: "example",
+    source: "./src/registry/react/button/button-unstyled.tsx",
+    component: React.lazy(() => import("@/registry/react/button/button-unstyled")),
+  },
   "button-sizes": {
     type: "example",
     source: "./src/registry/react/button/button-sizes.tsx",
     component: React.lazy(() => import("@/registry/react/button/button-sizes")),
+  },
+  "button-loading": {
+    type: "example",
+    source: "./src/registry/react/button/button-loading.tsx",
+    component: React.lazy(() => import("@/registry/react/button/button-loading")),
   },
   "button-icon-only": {
     type: "example",
@@ -188,6 +208,16 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/button/button-example.tsx",
     component: React.lazy(() => import("@/registry/react/button/button-example")),
+  },
+  "button-disabled": {
+    type: "example",
+    source: "./src/registry/react/button/button-disabled.tsx",
+    component: React.lazy(() => import("@/registry/react/button/button-disabled")),
+  },
+  "button-custom-style": {
+    type: "example",
+    source: "./src/registry/react/button/button-custom-style.tsx",
+    component: React.lazy(() => import("@/registry/react/button/button-custom-style")),
   },
   "badge-variants": {
     type: "example",
@@ -208,11 +238,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/badge/badge-example.tsx",
     component: React.lazy(() => import("@/registry/react/badge/badge-example")),
-  },
-  "calendar-example": {
-    type: "example",
-    source: "./src/registry/react/calendar/calendar-example.tsx",
-    component: React.lazy(() => import("@/registry/react/calendar/calendar-example")),
   },
   "avatar-sizes": {
     type: "example",
