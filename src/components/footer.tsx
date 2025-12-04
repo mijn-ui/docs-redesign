@@ -39,7 +39,7 @@ const Footer = ({ className }: FooterProps) => (
         Created by{" "}
         <a
           className="text-creator-brand underline"
-          href="https://htetaunglin-coder.vercel.app/"
+          href="https://htetaunglin-coder.dev/"
           rel="noopener noreferrer"
           target="_blank"
         >
