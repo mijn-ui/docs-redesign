@@ -1,8 +1,8 @@
 /**
  * React Component Registry - Auto-generated
  * 
- * Total components: 61
- * Generated: 2025-12-03T16:04:21.727Z
+ * Total components: 62
+ * Generated: 2025-12-04T08:25:42.610Z
  */
 
 import React from "react"
@@ -19,15 +19,20 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/theme/theme-toggler.tsx",
     component: React.lazy(() => import("@/registry/react/theme/theme-toggler")),
   },
-  "table-example": {
+  "tabs-example": {
     type: "example",
-    source: "./src/registry/react/table/table-example.tsx",
-    component: React.lazy(() => import("@/registry/react/table/table-example")),
+    source: "./src/registry/react/tabs/tabs-example.tsx",
+    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
   },
   "switch-example": {
     type: "example",
     source: "./src/registry/react/switch/switch-example.tsx",
     component: React.lazy(() => import("@/registry/react/switch/switch-example")),
+  },
+  "textarea-example": {
+    type: "example",
+    source: "./src/registry/react/textarea/textarea-example.tsx",
+    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
   },
   "skeleton-example": {
     type: "example",
@@ -39,15 +44,10 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/skeleton/skeleton-card.tsx",
     component: React.lazy(() => import("@/registry/react/skeleton/skeleton-card")),
   },
-  "tabs-example": {
+  "table-example": {
     type: "example",
-    source: "./src/registry/react/tabs/tabs-example.tsx",
-    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
-  },
-  "textarea-example": {
-    type: "example",
-    source: "./src/registry/react/textarea/textarea-example.tsx",
-    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
+    source: "./src/registry/react/table/table-example.tsx",
+    component: React.lazy(() => import("@/registry/react/table/table-example")),
   },
   "separator-example": {
     type: "example",
@@ -64,6 +64,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/select/select-example.tsx",
     component: React.lazy(() => import("@/registry/react/select/select-example")),
   },
+  "radio-group-example": {
+    type: "example",
+    source: "./src/registry/react/radio-group/radio-group-example.tsx",
+    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
+  },
   "scroll-area-horizontal": {
     type: "example",
     source: "./src/registry/react/scroll-area/scroll-area-horizontal.tsx",
@@ -73,11 +78,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/scroll-area/scroll-area-example.tsx",
     component: React.lazy(() => import("@/registry/react/scroll-area/scroll-area-example")),
-  },
-  "radio-group-example": {
-    type: "example",
-    source: "./src/registry/react/radio-group/radio-group-example.tsx",
-    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
   },
   "progress-example": {
     type: "example",
@@ -154,6 +154,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/command/command-dialog.tsx",
     component: React.lazy(() => import("@/registry/react/command/command-dialog")),
   },
+  "checkbox-example": {
+    type: "example",
+    source: "./src/registry/react/checkbox/checkbox-example.tsx",
+    component: React.lazy(() => import("@/registry/react/checkbox/checkbox-example")),
+  },
   "card-stats": {
     type: "example",
     source: "./src/registry/react/card/card-stats.tsx",
@@ -163,11 +168,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/card/card-example.tsx",
     component: React.lazy(() => import("@/registry/react/card/card-example")),
-  },
-  "checkbox-example": {
-    type: "example",
-    source: "./src/registry/react/checkbox/checkbox-example.tsx",
-    component: React.lazy(() => import("@/registry/react/checkbox/checkbox-example")),
   },
   "calendar-example": {
     type: "example",
@@ -284,30 +284,30 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/alert/alert-example.tsx",
     component: React.lazy(() => import("@/registry/react/alert/alert-example")),
   },
+  "accordion-variants": {
+    type: "example",
+    source: "./src/registry/react/accordion/accordion-variants.tsx",
+    component: React.lazy(() => import("@/registry/react/accordion/accordion-variants")),
+  },
   "accordion-unstyled": {
     type: "example",
     source: "./src/registry/react/accordion/accordion-unstyled.tsx",
     component: React.lazy(() => import("@/registry/react/accordion/accordion-unstyled")),
+  },
+  "accordion-trigger-with-icon": {
+    type: "example",
+    source: "./src/registry/react/accordion/accordion-trigger-with-icon.tsx",
+    component: React.lazy(() => import("@/registry/react/accordion/accordion-trigger-with-icon")),
   },
   "accordion-single": {
     type: "example",
     source: "./src/registry/react/accordion/accordion-single.tsx",
     component: React.lazy(() => import("@/registry/react/accordion/accordion-single")),
   },
-  "accordion-outlined": {
-    type: "example",
-    source: "./src/registry/react/accordion/accordion-outlined.tsx",
-    component: React.lazy(() => import("@/registry/react/accordion/accordion-outlined")),
-  },
   "accordion-multiple": {
     type: "example",
     source: "./src/registry/react/accordion/accordion-multiple.tsx",
     component: React.lazy(() => import("@/registry/react/accordion/accordion-multiple")),
-  },
-  "accordion-filled": {
-    type: "example",
-    source: "./src/registry/react/accordion/accordion-filled.tsx",
-    component: React.lazy(() => import("@/registry/react/accordion/accordion-filled")),
   },
   "accordion-custom-styles": {
     type: "example",
@@ -318,6 +318,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/accordion/accordion-custom-icon.tsx",
     component: React.lazy(() => import("@/registry/react/accordion/accordion-custom-icon")),
+  },
+  "accordion-controlled": {
+    type: "example",
+    source: "./src/registry/react/accordion/accordion-controlled.tsx",
+    component: React.lazy(() => import("@/registry/react/accordion/accordion-controlled")),
   },
 }
 
