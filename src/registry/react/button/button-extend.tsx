@@ -72,7 +72,7 @@ const Button = ({
   const styles = customButtonStyles({ color, variant, size }); // [!code ++]
   // [!code --]
   // const styles = buttonStyles({ color, variant, size, radius })
-  const { base, icon } = createTVUnstyledSlots(styles, unstyled);
+  const { base, loadingIcon } = createTVUnstyledSlots(styles, unstyled);
 
   return (
     <Component
@@ -80,7 +80,11 @@ const Button = ({
       disabled={loading || disabled}
       {...props}
     >
-      {loading && <Loader2 className={icon({ className: classNames?.icon })} />}
+      {loading && (
+        <Loader2
+          className={loadingIcon({ className: classNames?.loadingIcon })}
+        />
+      )}
       <Slottable>{loading ? "Loading..." : children}</Slottable>
     </Component>
   );
