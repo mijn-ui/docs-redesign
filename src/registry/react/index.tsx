@@ -1,8 +1,8 @@
 /**
  * React Component Registry - Auto-generated
  * 
- * Total components: 62
- * Generated: 2025-12-04T08:25:42.610Z
+ * Total components: 66
+ * Generated: 2025-12-05T07:55:31.740Z
  */
 
 import React from "react"
@@ -19,20 +19,25 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/theme/theme-toggler.tsx",
     component: React.lazy(() => import("@/registry/react/theme/theme-toggler")),
   },
+  "textarea-example": {
+    type: "example",
+    source: "./src/registry/react/textarea/textarea-example.tsx",
+    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
+  },
   "tabs-example": {
     type: "example",
     source: "./src/registry/react/tabs/tabs-example.tsx",
     component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
   },
+  "table-example": {
+    type: "example",
+    source: "./src/registry/react/table/table-example.tsx",
+    component: React.lazy(() => import("@/registry/react/table/table-example")),
+  },
   "switch-example": {
     type: "example",
     source: "./src/registry/react/switch/switch-example.tsx",
     component: React.lazy(() => import("@/registry/react/switch/switch-example")),
-  },
-  "textarea-example": {
-    type: "example",
-    source: "./src/registry/react/textarea/textarea-example.tsx",
-    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
   },
   "skeleton-example": {
     type: "example",
@@ -43,11 +48,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/skeleton/skeleton-card.tsx",
     component: React.lazy(() => import("@/registry/react/skeleton/skeleton-card")),
-  },
-  "table-example": {
-    type: "example",
-    source: "./src/registry/react/table/table-example.tsx",
-    component: React.lazy(() => import("@/registry/react/table/table-example")),
   },
   "separator-example": {
     type: "example",
@@ -64,11 +64,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/select/select-example.tsx",
     component: React.lazy(() => import("@/registry/react/select/select-example")),
   },
-  "radio-group-example": {
-    type: "example",
-    source: "./src/registry/react/radio-group/radio-group-example.tsx",
-    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
-  },
   "scroll-area-horizontal": {
     type: "example",
     source: "./src/registry/react/scroll-area/scroll-area-horizontal.tsx",
@@ -78,6 +73,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/scroll-area/scroll-area-example.tsx",
     component: React.lazy(() => import("@/registry/react/scroll-area/scroll-area-example")),
+  },
+  "radio-group-example": {
+    type: "example",
+    source: "./src/registry/react/radio-group/radio-group-example.tsx",
+    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
   },
   "progress-example": {
     type: "example",
@@ -269,10 +269,30 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/autocomplete/autocomplete-example-2.tsx",
     component: React.lazy(() => import("@/registry/react/autocomplete/autocomplete-example-2")),
   },
+  "alert-dialog-warning": {
+    type: "example",
+    source: "./src/registry/react/alert-dialog/alert-dialog-warning.tsx",
+    component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-warning")),
+  },
+  "alert-dialog-success": {
+    type: "example",
+    source: "./src/registry/react/alert-dialog/alert-dialog-success.tsx",
+    component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-success")),
+  },
+  "alert-dialog-newsletter": {
+    type: "example",
+    source: "./src/registry/react/alert-dialog/alert-dialog-newsletter.tsx",
+    component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-newsletter")),
+  },
   "alert-dialog-example": {
     type: "example",
     source: "./src/registry/react/alert-dialog/alert-dialog-example.tsx",
     component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-example")),
+  },
+  "alert-dialog-danger": {
+    type: "example",
+    source: "./src/registry/react/alert-dialog/alert-dialog-danger.tsx",
+    component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-danger")),
   },
   "alert-variant": {
     type: "example",

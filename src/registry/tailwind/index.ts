@@ -2,7 +2,7 @@
  * Tailwind Components Registry - Auto-generated
  * 
  * Total components: 26
- * Generated: 2025-11-22T17:26:57.824Z
+ * Generated: 2025-12-05T07:55:36.550Z
  */
 
 export type TailwindComponent = {

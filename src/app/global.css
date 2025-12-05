@@ -5,6 +5,13 @@
 @import "tw-animate-css";
 @source "../../node_modules/@mijn-ui";
 
+@layer base {
+  .lucide {
+    width: 1em;
+    height: 1em;
+  }
+}
+
 @theme {
   --color-fd-background: var(--color-bg-default);
   --color-fd-foreground: hsl(0, 0%, 6%);
@@ -104,9 +111,4 @@ body:has(#nd-docs-layout) {
   figure.shiki {
     @apply shadow-none!;
   }
-}
-
-.lucide {
-  width: 1em;
-  height: 1em;
 }
