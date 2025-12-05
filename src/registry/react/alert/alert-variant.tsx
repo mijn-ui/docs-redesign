@@ -1,4 +1,5 @@
 import { Alert, AlertDescription, AlertIcon, AlertTitle } from "@mijn-ui/react";
+import { AlertCircle, AlertTriangle, CheckCircle, Info } from "lucide-react";
 
 const AlertVariant = () => {
   return (
@@ -6,39 +7,68 @@ const AlertVariant = () => {
       {/* ----------------------------- Default ---------------------------- */}
       <Alert className="w-full max-w-lg" variant={"default"}>
         <AlertIcon>
-          <Icons.ErrorOutlineIcon />
+          <Info />
         </AlertIcon>
         <AlertTitle>Default</AlertTitle>
-        <AlertDescription>This is a outline default Alert.</AlertDescription>
+        <AlertDescription>
+          This is a default Alert for general information.
+        </AlertDescription>
+      </Alert>
+      {/* ----------------------------- Secondary ---------------------------- */}
+      <Alert className="w-full max-w-lg" variant={"secondary"}>
+        <AlertIcon>
+          <Info />
+        </AlertIcon>
+        <AlertTitle>Secondary</AlertTitle>
+        <AlertDescription>
+          This is a secondary Alert for additional information.
+        </AlertDescription>
+      </Alert>
+
+      {/* ----------------------------- Success ---------------------------- */}
+      <Alert className="w-full max-w-lg" variant={"success"}>
+        <AlertIcon>
+          <CheckCircle />
+        </AlertIcon>
+        <AlertTitle>Success</AlertTitle>
+        <AlertDescription>
+          This is a success Alert for completed actions.
+        </AlertDescription>
+      </Alert>
+      {/* ----------------------------- Warning ---------------------------- */}
+      <Alert className="w-full max-w-lg" variant={"warning"}>
+        <AlertIcon>
+          <AlertTriangle />
+        </AlertIcon>
+        <AlertTitle>Warning</AlertTitle>
+        <AlertDescription>
+          This is a warning Alert for cautionary messages.
+        </AlertDescription>
       </Alert>
 
       {/* ----------------------------- Danger ---------------------------- */}
       <Alert className="w-full max-w-lg" variant={"danger"}>
         <AlertIcon>
-          <Icons.ErrorOutlineIcon />
+          <AlertCircle />
         </AlertIcon>
         <AlertTitle>Danger</AlertTitle>
-        <AlertDescription>This is a outline Danger Alert.</AlertDescription>
+        <AlertDescription>
+          This is a danger Alert for critical errors or warnings.
+        </AlertDescription>
+      </Alert>
+
+      {/* ----------------------------- Inverse ---------------------------- */}
+      <Alert className="w-full max-w-lg" variant={"inverse"}>
+        <AlertIcon>
+          <Info />
+        </AlertIcon>
+        <AlertTitle>Inverse</AlertTitle>
+        <AlertDescription>
+          This is an inverse Alert with inverted styling.
+        </AlertDescription>
       </Alert>
     </div>
   );
-};
-
-const Icons = {
-  ErrorOutlineIcon: (props: React.HTMLAttributes<SVGSVGElement>) => (
-    <svg
-      fill="currentColor"
-      height="1em"
-      stroke="currentColor"
-      strokeWidth={0}
-      viewBox="0 0 24 24"
-      width="1em"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <path d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
-    </svg>
-  ),
 };
 
 export default AlertVariant;

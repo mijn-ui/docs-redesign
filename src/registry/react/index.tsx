@@ -1,8 +1,8 @@
 /**
  * React Component Registry - Auto-generated
  * 
- * Total components: 66
- * Generated: 2025-12-05T07:55:31.740Z
+ * Total components: 70
+ * Generated: 2025-12-05T09:49:01.406Z
  */
 
 import React from "react"
@@ -19,15 +19,15 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/theme/theme-toggler.tsx",
     component: React.lazy(() => import("@/registry/react/theme/theme-toggler")),
   },
-  "textarea-example": {
-    type: "example",
-    source: "./src/registry/react/textarea/textarea-example.tsx",
-    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
-  },
   "tabs-example": {
     type: "example",
     source: "./src/registry/react/tabs/tabs-example.tsx",
     component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
+  },
+  "textarea-example": {
+    type: "example",
+    source: "./src/registry/react/textarea/textarea-example.tsx",
+    component: React.lazy(() => import("@/registry/react/textarea/textarea-example")),
   },
   "table-example": {
     type: "example",
@@ -74,11 +74,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/scroll-area/scroll-area-example.tsx",
     component: React.lazy(() => import("@/registry/react/scroll-area/scroll-area-example")),
   },
-  "radio-group-example": {
-    type: "example",
-    source: "./src/registry/react/radio-group/radio-group-example.tsx",
-    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
-  },
   "progress-example": {
     type: "example",
     source: "./src/registry/react/progress/progress-example.tsx",
@@ -88,6 +83,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/popover/popover-example.tsx",
     component: React.lazy(() => import("@/registry/react/popover/popover-example")),
+  },
+  "radio-group-example": {
+    type: "example",
+    source: "./src/registry/react/radio-group/radio-group-example.tsx",
+    component: React.lazy(() => import("@/registry/react/radio-group/radio-group-example")),
   },
   "pagination-example": {
     type: "example",
@@ -294,6 +294,21 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/alert-dialog/alert-dialog-danger.tsx",
     component: React.lazy(() => import("@/registry/react/alert-dialog/alert-dialog-danger")),
   },
+  "alert-with-title": {
+    type: "example",
+    source: "./src/registry/react/alert/alert-with-title.tsx",
+    component: React.lazy(() => import("@/registry/react/alert/alert-with-title")),
+  },
+  "alert-with-title-and-icon": {
+    type: "example",
+    source: "./src/registry/react/alert/alert-with-title-and-icon.tsx",
+    component: React.lazy(() => import("@/registry/react/alert/alert-with-title-and-icon")),
+  },
+  "alert-with-action": {
+    type: "example",
+    source: "./src/registry/react/alert/alert-with-action.tsx",
+    component: React.lazy(() => import("@/registry/react/alert/alert-with-action")),
+  },
   "alert-variant": {
     type: "example",
     source: "./src/registry/react/alert/alert-variant.tsx",
@@ -303,6 +318,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/alert/alert-example.tsx",
     component: React.lazy(() => import("@/registry/react/alert/alert-example")),
+  },
+  "alert-dismissable": {
+    type: "example",
+    source: "./src/registry/react/alert/alert-dismissable.tsx",
+    component: React.lazy(() => import("@/registry/react/alert/alert-dismissable")),
   },
   "accordion-variants": {
     type: "example",
