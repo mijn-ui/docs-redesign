@@ -1,8 +1,8 @@
 /**
  * React Component Registry - Auto-generated
  * 
- * Total components: 67
- * Generated: 2025-12-05T12:41:43.947Z
+ * Total components: 68
+ * Generated: 2025-12-06T09:31:39.028Z
  */
 
 import React from "react"
@@ -24,20 +24,25 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/theme/theme-toggler.tsx",
     component: React.lazy(() => import("@/registry/react/theme/theme-toggler")),
   },
+  "tabs-example": {
+    type: "example",
+    source: "./src/registry/react/tabs/tabs-example.tsx",
+    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
+  },
   "table-example": {
     type: "example",
     source: "./src/registry/react/table/table-example.tsx",
     component: React.lazy(() => import("@/registry/react/table/table-example")),
   },
-  "separator-example": {
-    type: "example",
-    source: "./src/registry/react/separator/separator-example.tsx",
-    component: React.lazy(() => import("@/registry/react/separator/separator-example")),
-  },
   "switch-example": {
     type: "example",
     source: "./src/registry/react/switch/switch-example.tsx",
     component: React.lazy(() => import("@/registry/react/switch/switch-example")),
+  },
+  "separator-example": {
+    type: "example",
+    source: "./src/registry/react/separator/separator-example.tsx",
+    component: React.lazy(() => import("@/registry/react/separator/separator-example")),
   },
   "skeleton-example": {
     type: "example",
@@ -48,11 +53,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/skeleton/skeleton-card.tsx",
     component: React.lazy(() => import("@/registry/react/skeleton/skeleton-card")),
-  },
-  "tabs-example": {
-    type: "example",
-    source: "./src/registry/react/tabs/tabs-example.tsx",
-    component: React.lazy(() => import("@/registry/react/tabs/tabs-example")),
   },
   "select-scrollable": {
     type: "example",
@@ -84,15 +84,15 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/progress/progress-example.tsx",
     component: React.lazy(() => import("@/registry/react/progress/progress-example")),
   },
-  "pagination-example": {
-    type: "example",
-    source: "./src/registry/react/pagination/pagination-example.tsx",
-    component: React.lazy(() => import("@/registry/react/pagination/pagination-example")),
-  },
   "popover-example": {
     type: "example",
     source: "./src/registry/react/popover/popover-example.tsx",
     component: React.lazy(() => import("@/registry/react/popover/popover-example")),
+  },
+  "pagination-example": {
+    type: "example",
+    source: "./src/registry/react/pagination/pagination-example.tsx",
+    component: React.lazy(() => import("@/registry/react/pagination/pagination-example")),
   },
   "label-example": {
     type: "example",
@@ -159,11 +159,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/checkbox/checkbox-example.tsx",
     component: React.lazy(() => import("@/registry/react/checkbox/checkbox-example")),
   },
-  "calendar-example": {
-    type: "example",
-    source: "./src/registry/react/calendar/calendar-example.tsx",
-    component: React.lazy(() => import("@/registry/react/calendar/calendar-example")),
-  },
   "card-stats": {
     type: "example",
     source: "./src/registry/react/card/card-stats.tsx",
@@ -173,6 +168,11 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/card/card-example.tsx",
     component: React.lazy(() => import("@/registry/react/card/card-example")),
+  },
+  "calendar-example": {
+    type: "example",
+    source: "./src/registry/react/calendar/calendar-example.tsx",
+    component: React.lazy(() => import("@/registry/react/calendar/calendar-example")),
   },
   "button-with-icon": {
     type: "example",
@@ -219,21 +219,6 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     source: "./src/registry/react/button/button-custom-style.tsx",
     component: React.lazy(() => import("@/registry/react/button/button-custom-style")),
   },
-  "avatar-sizes": {
-    type: "example",
-    source: "./src/registry/react/avatar/avatar-sizes.tsx",
-    component: React.lazy(() => import("@/registry/react/avatar/avatar-sizes")),
-  },
-  "avatar-group": {
-    type: "example",
-    source: "./src/registry/react/avatar/avatar-group.tsx",
-    component: React.lazy(() => import("@/registry/react/avatar/avatar-group")),
-  },
-  "avatar-example": {
-    type: "example",
-    source: "./src/registry/react/avatar/avatar-example.tsx",
-    component: React.lazy(() => import("@/registry/react/avatar/avatar-example")),
-  },
   "badge-variants": {
     type: "example",
     source: "./src/registry/react/badge/badge-variants.tsx",
@@ -253,6 +238,26 @@ const REACT_REGISTRY: Record<string, ReactComponent> = {
     type: "example",
     source: "./src/registry/react/badge/badge-example.tsx",
     component: React.lazy(() => import("@/registry/react/badge/badge-example")),
+  },
+  "avatar-status": {
+    type: "example",
+    source: "./src/registry/react/avatar/avatar-status.tsx",
+    component: React.lazy(() => import("@/registry/react/avatar/avatar-status")),
+  },
+  "avatar-sizes": {
+    type: "example",
+    source: "./src/registry/react/avatar/avatar-sizes.tsx",
+    component: React.lazy(() => import("@/registry/react/avatar/avatar-sizes")),
+  },
+  "avatar-group": {
+    type: "example",
+    source: "./src/registry/react/avatar/avatar-group.tsx",
+    component: React.lazy(() => import("@/registry/react/avatar/avatar-group")),
+  },
+  "avatar-example": {
+    type: "example",
+    source: "./src/registry/react/avatar/avatar-example.tsx",
+    component: React.lazy(() => import("@/registry/react/avatar/avatar-example")),
   },
   "alert-dialog-warning": {
     type: "example",
