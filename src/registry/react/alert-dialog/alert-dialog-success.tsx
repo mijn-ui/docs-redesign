@@ -15,7 +15,7 @@ import { CheckCircle2, Send, X } from "lucide-react";
 const SuccessDialog = () => (
   <AlertDialog>
     <AlertDialogTrigger asChild>
-      <Button variant="success">
+      <Button color="success">
         <Send /> Process Payment
       </Button>
     </AlertDialogTrigger>
@@ -58,7 +58,7 @@ const SuccessDialog = () => (
       </div>
       <AlertDialogFooter className="sm:justify-center">
         <AlertDialogAction asChild unstyled>
-          <Button variant="success">View Receipt</Button>
+          <Button color="success">View Receipt</Button>
         </AlertDialogAction>
       </AlertDialogFooter>
     </AlertDialogContent>

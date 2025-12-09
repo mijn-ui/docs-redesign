@@ -13,9 +13,11 @@ const CardExample = () => (
     <CardHeader>
       <Button
         asChild
-        className="rounded-full bg-bg-secondary p-0 text-fg-tertiary sm:size-12"
         iconOnly
-        variant="ghost"
+        variant="filled"
+        color="secondary"
+        className="rounded-full text-fg-tertiary hover:text-fg-secondary"
+        size="lg"
       >
         <span>
           <Plus className="size-5 sm:size-6" />

@@ -18,21 +18,24 @@ const AccordionControlled = () => {
         <Button
           className="flex-1"
           onClick={() => setValue("accessible")}
-          variant={value === "accessible" ? "inverse" : "ghost"}
+          variant={value === "accessible" ? "filled" : "ghost"}
+          color={value === "accessible" ? "inverse" : "default"}
         >
           Accessible
         </Button>
         <Button
           className="flex-1"
           onClick={() => setValue("unstyled")}
-          variant={value === "unstyled" ? "inverse" : "ghost"}
+          variant={value === "unstyled" ? "filled" : "ghost"}
+          color={value === "unstyled" ? "inverse" : "default"}
         >
           Unstyled
         </Button>
         <Button
           className="flex-1"
           onClick={() => setValue("animated")}
-          variant={value === "animated" ? "inverse" : "ghost"}
+          variant={value === "animated" ? "filled" : "ghost"}
+          color={value === "animated" ? "inverse" : "default"}
         >
           Animated
         </Button>

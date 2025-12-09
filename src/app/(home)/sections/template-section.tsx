@@ -36,7 +36,7 @@ const TemplateSection = () => {
         </div>
 
         <div className="mt-10 flex w-full items-center justify-center">
-          <Button asChild className="text-sm" size="lg" variant="primary">
+          <Button asChild className="text-sm" size="lg" variant="filled" color="brand">
             <Link href={"/templates"}>
               Browse All <ArrowRight className="mt-0.5" />
             </Link>

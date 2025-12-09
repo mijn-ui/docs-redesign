@@ -51,7 +51,7 @@ export default async function Page(props: PageProps<"/docs/[...slug]">) {
                 <Logo className="size-5 items-center fill-fg-default" />
                 MijnUI
               </span>
-              <Badge radius="full" variant="primary-subtle">
+              <Badge radius="full" variant="subtle" color="brand">
                 v0.1.0
               </Badge>
             </div>

@@ -16,7 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@mijn-ui/react": "^0.4.9",
+    "@mijn-ui/react": "^0.4.13",
     "@radix-ui/react-slot": "^1.2.4",
     "axios": "^1.13.2",
     "fumadocs-core": "16.0.14",

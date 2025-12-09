@@ -2,7 +2,7 @@ import { Button } from "@mijn-ui/react";
 
 const ButtonWithIcon = () => (
   <div className="flex items-center gap-4">
-    <Button variant="inverse">
+    <Button color="inverse">
       <svg
         fill="currentColor"
         height="1em"

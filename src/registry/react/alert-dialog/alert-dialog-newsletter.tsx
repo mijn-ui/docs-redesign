@@ -18,7 +18,7 @@ import { Gift, Mail, Sparkles } from "lucide-react";
 const AlertDialogNewsletter = () => (
   <AlertDialog>
     <AlertDialogTrigger asChild>
-      <Button variant="primary">
+      <Button color="brand">
         <Mail className="size-4" />
         Subscribe to Newsletter
       </Button>
@@ -78,7 +78,7 @@ const AlertDialogNewsletter = () => (
 
       <AlertDialogFooter className="gap-2 sm:justify-center">
         <AlertDialogCancel asChild unstyled>
-          <Button variant="secondary">Maybe Later</Button>
+          <Button color="secondary">Maybe Later</Button>
         </AlertDialogCancel>
         <AlertDialogAction>Subscribe & Get 20% Off</AlertDialogAction>
       </AlertDialogFooter>

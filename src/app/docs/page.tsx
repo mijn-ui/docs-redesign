@@ -42,7 +42,7 @@ const Docs = () => (
             <Card className="overflow-hidden bg-fd-default transition-shadow hover:shadow-lg">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between">
-                  <Badge radius="full" variant="primary-subtle">
+                  <Badge radius="full" variant="subtle" color="brand">
                     Beta v0.1.0
                   </Badge>
                   <Code2 className="size-6 text-blue-500" />
@@ -119,7 +119,7 @@ const Docs = () => (
             <Card className="pointer-events-none overflow-hidden bg-fd-default transition-shadow hover:shadow-lg">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between">
-                  <Badge radius="full" variant="primary-subtle">
+                  <Badge radius="full" variant="subtle" color="brand">
                     Beta v0.1.0
                   </Badge>
                   <Palette className="size-6 text-teal-500" />
@@ -197,7 +197,7 @@ const Docs = () => (
             <Card className="overflow-hidden bg-fd-default transition-shadow hover:shadow-lg">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between">
-                  <Badge radius="full" variant="primary-subtle">
+                  <Badge radius="full" variant="filled" color="brand">
                     Beta v0.1.0
                   </Badge>
                   <Server className="size-6 text-red-500" />

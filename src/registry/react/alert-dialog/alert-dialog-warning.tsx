@@ -15,7 +15,7 @@ import { AlertTriangle, LogOut, X } from "lucide-react";
 const AlertDialogWarning = () => (
   <AlertDialog>
     <AlertDialogTrigger asChild>
-      <Button variant="warning">
+      <Button color="warning">
         <LogOut className="text-base" />
         Log Out
       </Button>
@@ -57,7 +57,7 @@ const AlertDialogWarning = () => (
 
       <AlertDialogFooter className="sm:justify-center">
         <AlertDialogCancel asChild unstyled>
-          <Button variant="secondary">Save & Log Out</Button>
+          <Button color="secondary">Save & Log Out</Button>
         </AlertDialogCancel>
         <AlertDialogAction>Discard & Log Out</AlertDialogAction>
       </AlertDialogFooter>

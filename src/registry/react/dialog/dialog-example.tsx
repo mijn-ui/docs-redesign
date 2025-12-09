@@ -51,7 +51,7 @@ const DialogExample = ({ unstyled = false }: DialogExampleProps) => (
       <DialogFooter>
         <DialogClose>Cancel</DialogClose>
         <DialogClose asChild unstyled>
-          <Button variant="primary">Confirm</Button>
+          <Button color="brand">Confirm</Button>
         </DialogClose>
       </DialogFooter>
     </DialogContent>

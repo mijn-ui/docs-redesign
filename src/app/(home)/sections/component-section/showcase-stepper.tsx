@@ -67,7 +67,8 @@ const ShowcaseStepper = () => {
           </Button>
           <Button
             className="flex h-8 gap-2 px-2.5 text-xs disabled:pointer-events-none disabled:opacity-80 disabled:brightness-75"
-            variant="primary"
+            variant="filled"
+            color="brand"
           >
             Continue
           </Button>

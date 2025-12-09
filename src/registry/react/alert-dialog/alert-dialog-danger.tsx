@@ -15,7 +15,7 @@ import { AlertTriangle, UserCircle, X } from "lucide-react";
 const AlertDialogDanger = () => (
   <AlertDialog>
     <AlertDialogTrigger asChild>
-      <Button variant="danger">
+      <Button color="danger">
         <UserCircle className="text-base" />
         Delete Account
       </Button>
@@ -50,10 +50,10 @@ const AlertDialogDanger = () => (
 
       <AlertDialogFooter className="gap-2 sm:justify-center">
         <AlertDialogCancel asChild unstyled>
-          <Button variant="secondary">Cancel</Button>
+          <Button color="secondary">Cancel</Button>
         </AlertDialogCancel>
         <AlertDialogAction asChild unstyled>
-          <Button variant="danger">Yes, Delete Account</Button>
+          <Button color="danger">Yes, Delete Account</Button>
         </AlertDialogAction>
       </AlertDialogFooter>
     </AlertDialogContent>

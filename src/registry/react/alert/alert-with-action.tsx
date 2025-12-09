@@ -23,7 +23,9 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Cancel</Button>
+            <Button color="default" variant="light">
+              Cancel
+            </Button>
             <Button>Confirm</Button>
           </div>
         </div>
@@ -42,7 +44,9 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Cancel</Button>
+            <Button color="secondary" variant="light">
+              Cancel
+            </Button>
             <Button>Confirm</Button>
           </div>
         </div>
@@ -61,8 +65,10 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Cancel</Button>
-            <Button variant="success">Confirm</Button>
+            <Button color="success" variant="light">
+              Cancel
+            </Button>
+            <Button color="success">Confirm</Button>
           </div>
         </div>
       </Alert>
@@ -80,8 +86,10 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Cancel</Button>
-            <Button variant="warning">Confirm</Button>
+            <Button color="warning" variant="light">
+              Cancel
+            </Button>
+            <Button color="warning">Confirm</Button>
           </div>
         </div>
       </Alert>
@@ -99,8 +107,10 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="ghost">Cancel</Button>
-            <Button variant="danger">Confirm</Button>
+            <Button color="danger" variant="light">
+              Cancel
+            </Button>
+            <Button color="danger">Confirm</Button>
           </div>
         </div>
       </Alert>
@@ -118,8 +128,8 @@ const AlertWithActions = () => {
             </AlertDescription>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="inverse">Cancel</Button>
-            <Button variant="default">Confirm</Button>
+            <Button color="inverse">Cancel</Button>
+            <Button color="default">Confirm</Button>
           </div>
         </div>
       </Alert>

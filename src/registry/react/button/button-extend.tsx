@@ -28,7 +28,7 @@ const customButtonStyles = tv({
     {
       // [!code ++]
       color: "olive", // [!code ++]
-      variant: "default", // [!code ++]
+      variant: "filled", // [!code ++]
       // [!code ++]
       class: {
         base: "bg-[#BEF264] text-[#000000]", // [!code ++]

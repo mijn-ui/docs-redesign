@@ -58,7 +58,7 @@ const TabsExample = () => (
           />
         </CardContent>
         <CardFooter>
-          <Button color="primary">Save changes</Button>
+          <Button color="brand">Save changes</Button>
         </CardFooter>
       </Card>
     </TabsContent>
@@ -92,7 +92,7 @@ const TabsExample = () => (
           />
         </CardContent>
         <CardFooter>
-          <Button color="primary">Save password</Button>
+          <Button color="brand">Save password</Button>
         </CardFooter>
       </Card>
     </TabsContent>

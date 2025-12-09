@@ -52,7 +52,7 @@ const ReactKeyFeaturesPlayground = () => {
     <figure className="not-prose relative w-full overflow-hidden rounded-lg border">
       <div className="flex h-80 w-full flex-col items-center overflow-hidden rounded-lg sm:flex-row">
         <div className="flex h-full min-h-32 flex-auto items-center justify-center bg-bg-default">
-          <Button {...buttonOptions} iconOnly={iconOnly}>
+          <Button {...buttonOptions} iconOnly={iconOnly} loadingText={iconOnly ? null: undefined}>
             {iconOnly ? "M" : "MijnUI"}
           </Button>
         </div>

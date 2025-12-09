@@ -20,7 +20,7 @@ const LandingSection = () => (
       </p>
     </div>
     <div className="mt-4 flex w-full flex-col justify-center gap-2 sm:flex-row md:mt-6">
-      <Button asChild variant="primary">
+      <Button asChild variant="filled" color="brand">
         <Link href="/docs">Get Started</Link>
       </Button>
       <Button asChild>

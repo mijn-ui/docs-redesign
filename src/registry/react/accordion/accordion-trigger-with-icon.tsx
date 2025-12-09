@@ -149,7 +149,7 @@ const SettingsAccordion = () => {
               <Button size="sm" variant="outlined">
                 Change Password
               </Button>
-              <Button size="sm" variant="primary">
+              <Button size="sm" color="brand">
                 Download Data
               </Button>
             </div>

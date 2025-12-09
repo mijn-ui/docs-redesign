@@ -1,17 +1,13 @@
 import { Button } from "@mijn-ui/react";
 
-const ButtonFilled = () => (
-  <div className="grid grid-cols-2 items-center gap-4 sm:grid-cols-3">
-    <Button>Default</Button>
-    <Button variant="primary">Primary</Button>
-    <Button variant="secondary">Secondary</Button>
-    <Button variant="outlined">Outlined</Button>
-    <Button variant="inverse">Inverse</Button>
-    <Button variant="success">Success</Button>
-    <Button variant="warning">Warning</Button>
-    <Button variant="danger">Danger</Button>
-    <Button variant="ghost">Ghost</Button>
+const ButtonVariants = () => (
+  <div className="flex justify-center gap-4 flex-wrap w-full">
+    <Button color="brand" variant="filled">Filled</Button>
+    <Button color="brand" variant="outlined">Outlined</Button>
+    <Button color="brand" variant="subtle">Subtle</Button>
+    <Button color="brand" variant="ghost">Ghost</Button>
+    <Button color="brand" variant="light">Light</Button>
   </div>
 );
 
-export default ButtonFilled;
+export default ButtonVariants;
