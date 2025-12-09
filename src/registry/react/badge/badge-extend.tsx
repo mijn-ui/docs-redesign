@@ -28,7 +28,7 @@ export const MyBadge = extendVariants(Badge, {
   compoundVariants: [
     // <- modify/add compound variants
     {
-      variant: "default",
+      variant: "filled",
       color: "olive",
       class:
         "!bg-clip-text !text-transparent from-[#84cc16]/30 via-[#84cc16] to-[#84cc16]/30",
